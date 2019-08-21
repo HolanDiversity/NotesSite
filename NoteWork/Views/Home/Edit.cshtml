@@ -1,0 +1,32 @@
+﻿@model NoteWork.Models.Note
+@{
+    ViewBag.Title = "Редактирование заметки";
+}
+<form asp-action="edit" asp-controller="home" asp-route-id="@Model.Id">
+    <div class="form-group">
+        @{ string namenote = ""; }
+        <label asp-for="NameNote" class="control-label">Название</label>
+        <input type="text" asp-for="NameNote" class="form-control" />
+        <input type="hidden" asp-for="NameNote" class="form-control" value="@namenote" />
+    </div>
+    @{
+        string img = "https://avatars.dicebear.com/v2/initials/" + @namenote + ".svg ";
+    }
+    <div class="form-group">
+        <input type="hidden" asp-for="Img" class="form-control" value="@img" />
+    </div>
+    <div class="form-group">
+        <label class="control-label" asp-for="TypeNoteId">Важность: </label>
+        <label class="control-label" asp-for="TypeNoteId">Не важно - </label>
+        <input type="radio" asp-for="TypeNoteId" value="1" />
+        <label class="control-label" asp-for="TypeNoteId">Важно - </label>
+        <input type="radio" asp-for="TypeNoteId" value="2" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ThisNote" class="control-label">Заметка</label>
+        <textarea type="text" asp-for="ThisNote" class="form-control" id="exampleFormControlTextarea1" rows="3" style="margin-top: 0px; margin-bottom: 0px; height: 111px;"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Готово" class="btn btn-default" />
+    </div>
+</form>

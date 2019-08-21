@@ -1,0 +1,46 @@
+﻿@*@model IEnumerable<NoteWork.Models.Note>*@
+@model NoteWork.Models.NotesListViewModel
+@{
+    ViewBag.Title = "Все заметки";
+}
+
+<form method="get">
+    <div class="form-inline form-group" >
+        <label class="control-label">Введите текст: </label>
+        @Html.TextBox("name", Model.Name, htmlAttributes: new { @class = "form-control" })
+
+        <input type="submit" value="Поиск" class="btn btn-default" />
+    </div>
+</form>
+
+<table class="table">
+    <tr>
+        <td>Название </td>
+        <td>Иконка</td>
+        <td>Тип заметок</td>
+        <td>Заметка</td>
+    </tr>
+    @foreach (var item in Model.Notes)
+    {
+        <tr>
+            <td>
+                @item.NameNote
+            </td>
+            <td>
+                <img width="50" height="50" src=@item.Img />
+            </td>
+            <td>
+                @item.TypeNote.NameType
+            </td>
+            <td>
+                @item.ThisNote
+            </td>
+            <td>
+                <a asp-action="Edit" asp-controller="Home" asp-route-id="@item.Id">Изменить</a>
+            </td>
+            <td>
+                <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+    }
+</table>
