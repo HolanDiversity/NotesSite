@@ -38,8 +38,8 @@ namespace NoteWork
             });
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            
 
             services.AddDbContext<NotesContext>(options =>
                 options.UseSqlServer(connection));

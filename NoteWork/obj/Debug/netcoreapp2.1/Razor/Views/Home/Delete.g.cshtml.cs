@@ -83,7 +83,7 @@ using NoteWork.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n\r\n    <div>\r\n        ");
             EndContext();
             BeginContext(375, 219, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "09808676b00345f6a0e17422ae6e08f3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d420cc716244cedaa8ff8b1a89ffeeb", async() => {
                 BeginContext(437, 150, true);
                 WriteLiteral("\r\n            <div class=\"form-group\">\r\n                <input type=\"submit\" class=\"btn btn-default\" value=\"Удалить?\" />\r\n            </div>\r\n        ");
                 EndContext();

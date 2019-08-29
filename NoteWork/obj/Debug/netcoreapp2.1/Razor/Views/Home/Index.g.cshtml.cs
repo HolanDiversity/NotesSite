@@ -68,7 +68,7 @@ using NoteWork.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(134, 310, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "36f54f54b2154e30a984e4d4765ea75e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54f6bbb22f06443283a26a5d5ff8759e", async() => {
                 BeginContext(153, 115, true);
                 WriteLiteral("\r\n    <div class=\"form-inline form-group\" >\r\n        <label class=\"control-label\">Введите текст: </label>\r\n        ");
                 EndContext();
@@ -151,7 +151,7 @@ WriteAttributeValue("", 797, item.Img, 797, 9, false);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1011, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3abaf21115244fa08268802cf9b58134", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b6cb2d31f1840dfb449b810dd1a5718", async() => {
                 BeginContext(1078, 8, true);
                 WriteLiteral("Изменить");
                 EndContext();
@@ -188,7 +188,7 @@ WriteAttributeValue("", 797, item.Img, 797, 9, false);
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1145, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0791ddce55974a8ca9d943c42af376f1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2978afebcb454db9ba58f9ff72a68d0e", async() => {
                 BeginContext(1214, 7, true);
                 WriteLiteral("Удалить");
                 EndContext();
